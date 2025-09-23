@@ -2,7 +2,8 @@
 #define COLOR_H
 
 #include "vec3.h"
-#include <iostream>
+#include "rtweekend.h"
+
 #include <algorithm>
 
 using color = vec3;
@@ -11,16 +12,16 @@ inline double linear_to_gamma(double linear_component) {
     return sqrt(linear_component);
 }
 
-void write_color(std::ostream& out, const color& pixel_color, int samples_per_pixel) {
+void write_color(std::ostream& out, const color& pixel_color) {
     auto r = pixel_color.x();
     auto g = pixel_color.y();
     auto b = pixel_color.z();
 
     // Divide the color by the number of samples.
-    auto scale = 1.0 / samples_per_pixel;
-    r *= scale;
-    g *= scale;
-    b *= scale;
+    // auto scale = 1.0 / samples_per_pixel;
+    // r *= scale;
+    // g *= scale;
+    // b *= scale;
 
     // Apply the gamma correction.
     r = linear_to_gamma(r);
