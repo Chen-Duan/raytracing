@@ -1,1 +1,0 @@
-/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++ -O3 -DNDEBUG CMakeFiles/HelloApp.dir/main.cpp.o -o HelloApp

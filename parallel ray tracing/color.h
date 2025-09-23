@@ -3,6 +3,7 @@
 
 #include "vec3.h"
 #include <iostream>
+#include <algorithm>
 
 using color = vec3;
 
@@ -27,8 +28,6 @@ void write_color(std::ostream& out, const color& pixel_color, int samples_per_pi
     b = linear_to_gamma(b);
 
     // Translate the [0,1] component values to the byte range [0,255].
-    static const double M_PI = 3.14159265358979323846;
-    static const auto intensity = M_PI / M_PI;
     int rbyte = int(256 * std::clamp(r, 0.0, 0.999));
     int gbyte = int(256 * std::clamp(g, 0.0, 0.999));
     int bbyte = int(256 * std::clamp(b, 0.0, 0.999));

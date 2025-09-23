@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       The system is: Linux - 5.14.0-570.19.1.el9_6.x86_64 - x86_64
   -
@@ -14,7 +14,7 @@ events:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc 
@@ -36,7 +36,7 @@ events:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++ 
@@ -57,12 +57,12 @@ events:
     backtrace:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-AD5RSK"
-      binary: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-AD5RSK"
+      source: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-eiEuHU"
+      binary: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-eiEuHU"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-AD5RSK'
+        Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-eiEuHU'
         
-        Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aeba1/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_aeba1.dir/build.make CMakeFiles/cmTC_aeba1.dir/build
-        gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-AD5RSK'
-        Building C object CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o
-        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc   -v -o CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a0986/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a0986.dir/build.make CMakeFiles/cmTC_a0986.dir/build
+        gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-eiEuHU'
+        Building C object CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o
+        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc   -v -o CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -86,8 +86,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aeba1.dir/'
-         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_aeba1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccCKriQX.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a0986.dir/'
+         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a0986.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPRMIl8.s
         GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 13.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -104,14 +104,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: d2ad63e43aa3c1f8c8baaa98e5b2de4a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aeba1.dir/'
-         as -v --64 -o CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o /tmp/ccCKriQX.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a0986.dir/'
+         as -v --64 -o CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o /tmp/ccPRMIl8.s
         GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_aeba1
-        /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeba1.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_a0986
+        /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0986.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc
         COLLECT_LTO_WRAPPER=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
@@ -123,14 +123,14 @@ events:
         gcc version 13.2.0 (GCC) 
         COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aeba1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_aeba1.'
-         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccak0S6X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_aeba1 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a0986' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a0986.'
+         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyZuaOy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a0986 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
         collect2 version 13.2.0
-        /project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccak0S6X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_aeba1 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
+        /project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyZuaOy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a0986 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
         GNU ld (GNU Binutils) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aeba1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_aeba1.'
-        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc  -v -Wl,-v CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o -o cmTC_aeba1
-        gmake[1]: Leaving directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-AD5RSK'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a0986' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a0986.'
+        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc  -v -Wl,-v CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o -o cmTC_a0986
+        gmake[1]: Leaving directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-eiEuHU'
         
       exitCode: 0
   -
@@ -138,7 +138,7 @@ events:
     backtrace:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -166,18 +166,18 @@ events:
     backtrace:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-AD5RSK']
+        ignore line: [Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-eiEuHU']
         ignore line: []
-        ignore line: [Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aeba1/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_aeba1.dir/build.make CMakeFiles/cmTC_aeba1.dir/build]
-        ignore line: [gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-AD5RSK']
-        ignore line: [Building C object CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc   -v -o CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a0986/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a0986.dir/build.make CMakeFiles/cmTC_a0986.dir/build]
+        ignore line: [gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-eiEuHU']
+        ignore line: [Building C object CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc   -v -o CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -186,8 +186,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aeba1.dir/']
-        ignore line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_aeba1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccCKriQX.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a0986.dir/']
+        ignore line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a0986.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPRMIl8.s]
         ignore line: [GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -204,14 +204,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: d2ad63e43aa3c1f8c8baaa98e5b2de4a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aeba1.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o /tmp/ccCKriQX.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a0986.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o /tmp/ccPRMIl8.s]
         ignore line: [GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_aeba1]
-        ignore line: [/project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeba1.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_a0986]
+        ignore line: [/project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0986.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
@@ -223,13 +223,13 @@ events:
         ignore line: [gcc version 13.2.0 (GCC) ]
         ignore line: [COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aeba1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_aeba1.']
-        link line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccak0S6X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_aeba1 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a0986' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a0986.']
+        link line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyZuaOy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a0986 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccak0S6X.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccyZuaOy.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -241,7 +241,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_aeba1] ==> ignore
+          arg [cmTC_a0986] ==> ignore
           arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
           arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o] ==> obj [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o]
@@ -257,7 +257,7 @@ events:
           arg [-L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib] ==> dir [/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib]
           arg [-L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -272,7 +272,7 @@ events:
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o] ==> obj [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o]
           arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
         ignore line: [collect2 version 13.2.0]
-        ignore line: [/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccak0S6X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_aeba1 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_aeba1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
+        ignore line: [/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyZuaOy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a0986 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_a0986.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
         linker tool for 'C': /project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld
         collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
         collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
@@ -300,7 +300,7 @@ events:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Running the C compiler's linker: "/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.40
@@ -309,12 +309,12 @@ events:
     backtrace:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-kKieYT"
-      binary: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-kKieYT"
+      source: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-ItE1Ab"
+      binary: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-ItE1Ab"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -324,13 +324,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-kKieYT'
+        Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-ItE1Ab'
         
-        Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1d803/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1d803.dir/build.make CMakeFiles/cmTC_1d803.dir/build
-        gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-kKieYT'
-        Building CXX object CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o
-        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++   -v -o CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2d01a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2d01a.dir/build.make CMakeFiles/cmTC_2d01a.dir/build
+        gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-ItE1Ab'
+        Building CXX object CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o
+        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++   -v -o CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -339,8 +339,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1d803.dir/'
-         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1d803.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccMhT4De.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d01a.dir/'
+         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2d01a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccWSYmNb.s
         GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 13.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -360,14 +360,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: c2383c96a455109820a543404d237d23
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1d803.dir/'
-         as -v --64 -o CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMhT4De.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d01a.dir/'
+         as -v --64 -o CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWSYmNb.s
         GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_1d803
-        /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d803.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_2d01a
+        /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d01a.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++
         COLLECT_LTO_WRAPPER=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
@@ -379,14 +379,14 @@ events:
         gcc version 13.2.0 (GCC) 
         COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1d803' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1d803.'
-         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTOEqcu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1d803 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2d01a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2d01a.'
+         /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8D5Thq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2d01a /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
         collect2 version 13.2.0
-        /project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTOEqcu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1d803 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
+        /project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8D5Thq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2d01a /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o
         GNU ld (GNU Binutils) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1d803' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1d803.'
-        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++  -v -Wl,-v CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1d803
-        gmake[1]: Leaving directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-kKieYT'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2d01a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2d01a.'
+        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++  -v -Wl,-v CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2d01a
+        gmake[1]: Leaving directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-ItE1Ab'
         
       exitCode: 0
   -
@@ -394,7 +394,7 @@ events:
     backtrace:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -428,18 +428,18 @@ events:
     backtrace:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-kKieYT']
+        ignore line: [Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-ItE1Ab']
         ignore line: []
-        ignore line: [Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1d803/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_1d803.dir/build.make CMakeFiles/cmTC_1d803.dir/build]
-        ignore line: [gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-kKieYT']
-        ignore line: [Building CXX object CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++   -v -o CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2d01a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2d01a.dir/build.make CMakeFiles/cmTC_2d01a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-ItE1Ab']
+        ignore line: [Building CXX object CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++   -v -o CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o -c /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -448,8 +448,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1d803.dir/']
-        ignore line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1d803.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccMhT4De.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d01a.dir/']
+        ignore line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE /project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2d01a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccWSYmNb.s]
         ignore line: [GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -469,14 +469,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: c2383c96a455109820a543404d237d23]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1d803.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMhT4De.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d01a.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWSYmNb.s]
         ignore line: [GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_1d803]
-        ignore line: [/project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d803.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_2d01a]
+        ignore line: [/project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d01a.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
@@ -488,13 +488,13 @@ events:
         ignore line: [gcc version 13.2.0 (GCC) ]
         ignore line: [COMPILER_PATH=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/:/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1d803' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1d803.']
-        link line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTOEqcu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1d803 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2d01a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2d01a.']
+        link line: [ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8D5Thq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2d01a /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccTOEqcu.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc8D5Thq.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -506,7 +506,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_1d803] ==> ignore
+          arg [cmTC_2d01a] ==> ignore
           arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
           arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o] ==> obj [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o]
@@ -522,7 +522,7 @@ events:
           arg [-L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib] ==> dir [/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib]
           arg [-L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -533,7 +533,7 @@ events:
           arg [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o] ==> obj [/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o]
           arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
         ignore line: [collect2 version 13.2.0]
-        ignore line: [/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTOEqcu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1d803 /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_1d803.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
+        ignore line: [/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld -plugin /project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/project/dsi/apps/easybuild/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8D5Thq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2d01a /lib/../lib64/crt1.o /lib/../lib64/crti.o /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib/../lib64 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/project/dsi/apps/easybuild/software/OpenSSL/1.1/lib -L/project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. -v CMakeFiles/cmTC_2d01a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /project/dsi/apps/easybuild/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/../lib64/crtn.o]
         linker tool for 'CXX': /project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld
         collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
         collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
@@ -561,8 +561,42 @@ events:
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
       - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:3 (project)"
     message: |
       Running the CXX compiler's linker: "/project/dsi/apps/easybuild/software/binutils/2.40-GCCcore-13.2.0/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.40
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "/project/dsi/apps/easybuild/software/CMake/4.0.3/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-pItHzg"
+      binary: "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-pItHzg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-pItHzg'
+        
+        Run Build Command(s): /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f1d44/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f1d44.dir/build.make CMakeFiles/cmTC_f1d44.dir/build
+        gmake[1]: Entering directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-pItHzg'
+        Building C object CMakeFiles/cmTC_f1d44.dir/src.c.o
+        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f1d44.dir/src.c.o -c "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-pItHzg/src.c"
+        Linking C executable cmTC_f1d44
+        /project/dsi/apps/easybuild/software/CMake/4.0.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1d44.dir/link.txt --verbose=1
+        /project/dsi/apps/easybuild/software/GCCcore/13.2.0/bin/cc CMakeFiles/cmTC_f1d44.dir/src.c.o -o cmTC_f1d44
+        gmake[1]: Leaving directory '/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles/CMakeScratch/TryCompile-pItHzg'
+        
+      exitCode: 0
 ...
