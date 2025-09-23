@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = "/project/luo/ychen270/ece6360/raytracing/parallel ray tracin
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/HelloApp.dir/all
+all: CMakeFiles/pathtracer.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/HelloApp.dir/codegen
+codegen: CMakeFiles/pathtracer.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/HelloApp.dir/clean
+clean: CMakeFiles/pathtracer.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/HelloApp.dir
+# Target rules for target CMakeFiles/pathtracer.dir
 
 # All Build rule for target.
-CMakeFiles/HelloApp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloApp.dir/build.make CMakeFiles/HelloApp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloApp.dir/build.make CMakeFiles/HelloApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles" --progress-num=1,2 "Built target HelloApp"
-.PHONY : CMakeFiles/HelloApp.dir/all
+CMakeFiles/pathtracer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles" --progress-num=1,2 "Built target pathtracer"
+.PHONY : CMakeFiles/pathtracer.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/HelloApp.dir/rule: cmake_check_build_system
+CMakeFiles/pathtracer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HelloApp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pathtracer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles" 0
-.PHONY : CMakeFiles/HelloApp.dir/rule
+.PHONY : CMakeFiles/pathtracer.dir/rule
 
 # Convenience name for target.
-HelloApp: CMakeFiles/HelloApp.dir/rule
-.PHONY : HelloApp
+pathtracer: CMakeFiles/pathtracer.dir/rule
+.PHONY : pathtracer
 
 # codegen rule for target.
-CMakeFiles/HelloApp.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloApp.dir/build.make CMakeFiles/HelloApp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target HelloApp"
-.PHONY : CMakeFiles/HelloApp.dir/codegen
+CMakeFiles/pathtracer.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target pathtracer"
+.PHONY : CMakeFiles/pathtracer.dir/codegen
 
 # clean rule for target.
-CMakeFiles/HelloApp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloApp.dir/build.make CMakeFiles/HelloApp.dir/clean
-.PHONY : CMakeFiles/HelloApp.dir/clean
+CMakeFiles/pathtracer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/clean
+.PHONY : CMakeFiles/pathtracer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
