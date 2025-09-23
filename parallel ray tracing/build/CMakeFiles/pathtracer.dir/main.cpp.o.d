@@ -219,6 +219,7 @@ CMakeFiles/pathtracer.dir/main.cpp.o: \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/algorithmfwd.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/stl_heap.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/pstl/glue_algorithm_defs.h \
+ /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/interval.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/ray.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/hittable.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/hittable_list.h \
