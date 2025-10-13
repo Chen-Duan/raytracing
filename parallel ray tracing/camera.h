@@ -2,6 +2,7 @@
 #define CAMERA_H
 
 #include "hittable.h"
+#include "material.h"
 
 class camera {
   public:
@@ -142,7 +143,7 @@ class camera {
                 }
                 image_buffer[j * image_width + i] = pixel_color;
             }
-            ++completed_scanlines;
+            completed_scanlines.fetch_add(1);
         }
     }
 
