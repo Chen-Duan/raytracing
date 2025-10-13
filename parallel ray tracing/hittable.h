@@ -3,6 +3,7 @@
 
 #include "rtweekend.h"
 
+class material;
 
 class hit_record {
   public:

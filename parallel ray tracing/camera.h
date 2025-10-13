@@ -142,7 +142,7 @@ class camera {
                 }
                 image_buffer[j * image_width + i] = pixel_color;
             }
-            completed_scanlines++;
+            ++completed_scanlines;
         }
     }
 
