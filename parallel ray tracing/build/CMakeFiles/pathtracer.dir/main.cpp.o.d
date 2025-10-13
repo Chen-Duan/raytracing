@@ -223,8 +223,9 @@ CMakeFiles/pathtracer.dir/main.cpp.o: \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/ray.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/camera.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/hittable.h \
- /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/hittable_list.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/material.h \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/atomic \
+ /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/hittable_list.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/sphere.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/thread \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/std_thread.h \
@@ -232,5 +233,4 @@ CMakeFiles/pathtracer.dir/main.cpp.o: \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/chrono.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/ratio \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/ctime \
- /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/parse_numbers.h \
- /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/atomic
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/parse_numbers.h
