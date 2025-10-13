@@ -108,7 +108,7 @@ int main() {
     cam.lookat   = point3(0, 0.5, -1.0);
     cam.vup      = vec3(0,1,0);
 
-    cam.render(world);
+    cam.initialize();
 
     // === Multi-threaded Render ===
 
