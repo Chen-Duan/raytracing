@@ -3,6 +3,7 @@
 
 #include "hittable.h"
 #include "rtweekend.h"
+#include "material.h"
 
 class sphere : public hittable {
   public:

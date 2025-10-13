@@ -17,6 +17,20 @@ class camera {
 
     int image_height; // Public so the main render loop can access it
 
+    ray get_ray(int i, int j) const {
+        // Construct a camera ray originating from the origin and directed at randomly sampled
+        // point around the pixel location i, j.
+
+        auto offset = sample_square();
+        auto pixel_sample = pixel00_loc
+                          + ((i + offset.x()) * pixel_delta_u)
+                          + ((j + offset.y()) * pixel_delta_v);
+
+        auto ray_origin = center;
+        auto ray_direction = pixel_sample - ray_origin;
+
+        return ray(ray_origin, ray_direction);
+    }
 
     void render(const hittable& world) {
         initialize();
@@ -29,7 +43,7 @@ class camera {
                 color pixel_color(0,0,0);
                 for (int sample = 0; sample < samples_per_pixel; sample++) {
                     ray r = get_ray(i, j);
-                    pixel_color += ray_color(r, world);
+                    pixel_color += ray_color(r, max_depth, world);
                 }
                 write_color(std::cout, pixel_samples_scale * pixel_color, samples_per_pixel);
             }
@@ -72,52 +86,64 @@ class camera {
         pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
     }
 
-    color ray_color(const ray& r, const hittable& world) const {
+    // color ray_color(const ray& r, const hittable& world) const {
+    //     hit_record rec;
+
+    //     if (world.hit(r, interval(0, infinity), rec)) {
+    //         vec3 direction = random_on_hemisphere(rec.normal);
+    //         return 0.5 * ray_color(ray(rec.p, direction), world);
+    //     }
+
+    //     vec3 unit_direction = unit_vector(r.direction());
+    //     auto a = 0.5*(unit_direction.y() + 1.0);
+    //     return (1.0-a)*color(1.0, 1.0, 1.0) + a*color(0.5, 0.7, 1.0);
+    // }
+
+    color ray_color(const ray& r, int depth, const hittable& world) {
         hit_record rec;
 
-        if (world.hit(r, interval(0, infinity), rec)) {
-            vec3 direction = random_on_hemisphere(rec.normal);
-            return 0.5 * ray_color(ray(rec.p, direction), world);
+        // If we've exceeded the ray bounce limit, no more light is gathered.
+        if (depth <= 0)
+            return color(0,0,0);
+
+        if (world.hit(r, interval(0.001, infinity), rec)) {
+            ray scattered;
+            color attenuation;
+            
+            // Get the emission color from the hit material
+            color emitted_color = rec.mat->emitted();
+
+            if (rec.mat->scatter(r, rec, attenuation, scattered)) {
+                // A scattered ray contributes its color multiplied by the material's attenuation
+                return emitted_color + attenuation * ray_color(scattered, depth - 1, world);
+            }
+            
+            // If the ray doesn't scatter, we only get the emitted light
+            return emitted_color;
         }
 
-        vec3 unit_direction = unit_vector(r.direction());
-        auto a = 0.5*(unit_direction.y() + 1.0);
-        return (1.0-a)*color(1.0, 1.0, 1.0) + a*color(0.5, 0.7, 1.0);
+        // If the ray hits nothing, return the background color (black)
+        return color(0,0,0);
     }
 
     void render_scanlines(
-    color* image_buffer,
-    int image_width, int image_height,
-    int start_scanline, int end_scanline,
-    const hittable& world, const camera& cam,
-    std::atomic<int>& completed_scanlines)
-{
-    for (int j = start_scanline; j < end_scanline; ++j) {
-        for (int i = 0; i < image_width; ++i) {
-            color pixel_color(0,0,0);
-            for (int sample = 0; sample < cam.samples_per_pixel; ++sample) {
-                ray r = cam.get_ray(i, j);
-                pixel_color += ray_color(r, cam.max_depth, world);
+        color* image_buffer,
+        int image_width, int image_height,
+        int start_scanline, int end_scanline,
+        const hittable& world, const camera& cam,
+        std::atomic<int>& completed_scanlines)
+    {
+        for (int j = start_scanline; j < end_scanline; ++j) {
+            for (int i = 0; i < image_width; ++i) {
+                color pixel_color(0,0,0);
+                for (int sample = 0; sample < cam.samples_per_pixel; ++sample) {
+                    ray r = cam.get_ray(i, j);
+                    pixel_color += ray_color(r, cam.max_depth, world);
+                }
+                image_buffer[j * image_width + i] = pixel_color;
             }
-            image_buffer[j * image_width + i] = pixel_color;
+            completed_scanlines++;
         }
-        completed_scanlines++;
-    }
-}
-
-    ray get_ray(int i, int j) const {
-        // Construct a camera ray originating from the origin and directed at randomly sampled
-        // point around the pixel location i, j.
-
-        auto offset = sample_square();
-        auto pixel_sample = pixel00_loc
-                          + ((i + offset.x()) * pixel_delta_u)
-                          + ((j + offset.y()) * pixel_delta_v);
-
-        auto ray_origin = center;
-        auto ray_direction = pixel_sample - ray_origin;
-
-        return ray(ray_origin, ray_direction);
     }
 
     vec3 sample_square() const {
