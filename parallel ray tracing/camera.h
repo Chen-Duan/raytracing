@@ -87,7 +87,6 @@ class camera {
         std::clog << "\rDone.                 \n";
     }
 
-    int image_height;
 
   private:
     point3 center;         // Camera center
