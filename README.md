@@ -1,8 +1,12 @@
 # raytracing
 Learning history for ray tracing
 # The Final Image is as below
-image.png
+
+![alt text](image.png)
+
 And this is the parameters:
+
+
     ```    
     auto material_ground = make_shared<lambertian>(color(0.5, 0.5, 0.5)); 
     auto material_center = make_shared<lambertian>(color(0.7, 0.1, 0.1)); 
