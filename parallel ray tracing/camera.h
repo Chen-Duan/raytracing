@@ -3,6 +3,7 @@
 
 #include "hittable.h"
 #include "material.h"
+#include <atomic>
 
 class camera {
   public:
