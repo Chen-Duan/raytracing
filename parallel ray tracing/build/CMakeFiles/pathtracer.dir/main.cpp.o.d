@@ -73,6 +73,7 @@ CMakeFiles/pathtracer.dir/main.cpp.o: \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/tr1/poly_hermite.tcc \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/tr1/poly_laguerre.tcc \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/tr1/riemann_zeta.tcc \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/cstdlib \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/iostream \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/ostream \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/ios \
@@ -143,7 +144,6 @@ CMakeFiles/pathtracer.dir/main.cpp.o: \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/functional_hash.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/string_view.tcc \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/ext/string_conversions.h \
- /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/cstdlib \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/cstdio \
  /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
  /usr/include/bits/types/__fpos64_t.h \
@@ -199,8 +199,6 @@ CMakeFiles/pathtracer.dir/main.cpp.o: \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/backward/auto_ptr.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/pstl/glue_memory_defs.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/pstl/execution_defs.h \
- /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/color.h \
- /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/vec3.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/random \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/cstdint \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/random.h \
@@ -214,14 +212,25 @@ CMakeFiles/pathtracer.dir/main.cpp.o: \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/numeric \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/stl_numeric.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/pstl/glue_numeric_defs.h \
+ /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/color.h \
+ /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/vec3.h \
+ /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/interval.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/algorithm \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/stl_algo.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/algorithmfwd.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/stl_heap.h \
  /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/pstl/glue_algorithm_defs.h \
- /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/interval.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/ray.h \
+ /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/camera.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/hittable.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/hittable_list.h \
  /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/material.h \
- /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/sphere.h
+ /project/luo/ychen270/ece6360/raytracing/parallel\ ray\ tracing/sphere.h \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/thread \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/std_thread.h \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/this_thread_sleep.h \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/chrono.h \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/ratio \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/ctime \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/bits/parse_numbers.h \
+ /project/dsi/apps/easybuild/software/GCCcore/13.2.0/include/c++/13.2.0/atomic
