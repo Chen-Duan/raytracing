@@ -2,7 +2,7 @@
 #SBATCH --job-name=cuda_trace
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
-#SBATCH --time=00:10:00
+#SBATCH --time=01:00:00
 #SBATCH --output=result.out
 #SBATCH --error=result.err
 
@@ -16,7 +16,7 @@ module load nvhpc/24.11-nompi
 
 # --- 2. Build the Project ---
 # We build inside the job to ensure the binary matches the compute node's GPU
-cd build
+mkdir -p build && cd build
 cmake ..
 make
 
@@ -35,4 +35,4 @@ nsys profile --trace=cuda,osrt --output=timeline_report --force-overwrite true .
 # --- REQUIREMENT 3: Kernel Analysis (ncu) ---
 # This generates 'kernel_report.ncu-rep'
 echo "Profiling Kernels..."
-ncu --set full --output=kernel_report --force-overwrite ./pathtracer > /dev/null
+ncu --section MemoryWorkloadAnalysis -o kernel_report --force-overwrite ./pathtracer > ncu.log
