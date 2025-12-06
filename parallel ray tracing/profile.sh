@@ -26,6 +26,13 @@ echo "Starting execution..."
 # Option A: Just run it (Uncomment if you just want the image)
 ./pathtracer > image.ppm
 
-# Option B: Run with Profiler (As you requested)
-# Note: We use --force-overwrite to avoid errors if reports exist
+# --- REQUIREMENT 2: Performance Timeline (nsys) ---
+# This generates 'timeline_report.nsys-rep'
+# We send stdout to /dev/null because we don't need the image data for profiling
+echo "Profiling Timeline..."
+nsys profile --trace=cuda,osrt --output=timeline_report --force-overwrite true ./pathtracer > /dev/null
 
+# --- REQUIREMENT 3: Kernel Analysis (ncu) ---
+# This generates 'kernel_report.ncu-rep'
+echo "Profiling Kernels..."
+ncu --set full --output=kernel_report --force-overwrite ./pathtracer > /dev/null
