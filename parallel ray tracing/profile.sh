@@ -24,9 +24,8 @@ make
 echo "Starting execution..."
 
 # Option A: Just run it (Uncomment if you just want the image)
-# ./pathtracer > image.ppm
+./pathtracer > image.ppm
 
 # Option B: Run with Profiler (As you requested)
 # Note: We use --force-overwrite to avoid errors if reports exist
-nsys profile --trace=cuda,osrt --output=timeline_report --force-overwrite true ./pathtracer > image.ppm
 
