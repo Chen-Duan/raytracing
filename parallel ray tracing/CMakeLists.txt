@@ -1,14 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
-project(PathTracerCUDA LANGUAGES CXX CUDA)
+project(PathTracerCPU LANGUAGES CXX) # <--- Make sure CUDA is gone from here
 
-set(CMAKE_CUDA_STANDARD 14)
-# Added 50 and 52 for older Maxwell GPUs often found in clusters
-set(CMAKE_CUDA_ARCHITECTURES 50 52 60 70 75 80) 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(${CMAKE_SOURCE_DIR})
 
-# --- THE FIX: Explicitly list your file instead of using GLOB ---
-# file(GLOB sources *.cu) <--- DELETE THIS LINE
-add_executable(pathtracer main.cu)
+add_executable(pathtracer main.cpp)
 
-target_compile_options(pathtracer PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-O3 -use_fast_math>)
+# Simple optimization flags for CPU
+target_compile_options(pathtracer PRIVATE -O3)

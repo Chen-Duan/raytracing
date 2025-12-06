@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "/share/apps/nvhpc_sdk-24.11/Linux_x86_64/24.11/compilers/bin/nvc++")
+set(CMAKE_CXX_COMPILER "/share/apps/gcc-11.3.0/bin/c++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
-set(CMAKE_CXX_COMPILER_ID "NVHPC")
-set(CMAKE_CXX_COMPILER_VERSION "24.11.0")
+set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_VERSION "11.3.0")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")
@@ -18,16 +18,16 @@ set(CMAKE_CXX26_COMPILE_FEATURES "")
 
 set(CMAKE_CXX_PLATFORM_ID "Linux")
 set(CMAKE_CXX_SIMULATE_ID "")
-set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")
+set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
 
 set(CMAKE_AR "/usr/bin/ar")
-set(CMAKE_CXX_COMPILER_AR "")
+set(CMAKE_CXX_COMPILER_AR "/share/apps/gcc-11.3.0/bin/gcc-ar")
 set(CMAKE_RANLIB "/usr/bin/ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "")
+set(CMAKE_CXX_COMPILER_RANLIB "/share/apps/gcc-11.3.0/bin/gcc-ranlib")
 set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
@@ -37,7 +37,7 @@ set(CMAKE_CXX_COMPILER_LINKER_VERSION 2.35.2)
 set(CMAKE_CXX_COMPILER_LINKER_FRONTEND_VARIANT GNU)
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
-set(CMAKE_COMPILER_IS_GNUCXX )
+set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
 set(CMAKE_CXX_COMPILER_WORKS TRUE)
 set(CMAKE_CXX_ABI_COMPILED TRUE)
@@ -87,9 +87,9 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/include")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "atomic;nvhpcatm;stdc++;nvomp;dl;nvhpcatm;atomic;pthread;nvcpumath;nsnvc;nvc;gcc;c;gcc_s;m")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/share/apps/openmpi-4.1.7-nvhpc-gpu/lib;/share/apps/gcc-11.3.0/lib64;/project/dsi/apps/easybuild/software/CUDA/12.4.0/stubs/lib64;/project/dsi/apps/easybuild/software/CUDA/12.4.0/lib;/share/apps/nvhpc_sdk-24.11/Linux_x86_64/24.11/compilers/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/11")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/share/apps/gcc-11.3.0/include/c++/11.3.0;/share/apps/gcc-11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu;/share/apps/gcc-11.3.0/include/c++/11.3.0/backward;/share/apps/gcc-11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/share/apps/gcc-11.3.0/include;/share/apps/gcc-11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/share/apps/gcc-11.3.0/lib64;/share/apps/gcc-11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib64;/usr/lib64;/share/apps/gcc-11.3.0/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")
 
