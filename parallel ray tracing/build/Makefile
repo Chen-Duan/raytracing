@@ -129,29 +129,29 @@ pathtracer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/build
 .PHONY : pathtracer/fast
 
-main.o: main.cu.o
+main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
-main.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/main.cu.o
-.PHONY : main.cu.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main.i: main.cu.i
+main.i: main.cpp.i
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/main.cu.i
-.PHONY : main.cu.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.cu.s
+main.s: main.cpp.s
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/main.cu.s
-.PHONY : main.cu.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathtracer.dir/build.make CMakeFiles/pathtracer.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:

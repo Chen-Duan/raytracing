@@ -19,20 +19,17 @@ module load nvhpc/24.11-nompi
 mkdir -p build && cd build
 cmake ..
 make
-
 # --- 3. Run & Profile ---
-echo "Starting execution..."
+echo "Starting CPU profiling..."
 
-# Option A: Just run it (Uncomment if you just want the image)
-./pathtracer > image.ppm
-
-# --- REQUIREMENT 2: Performance Timeline (nsys) ---
-# This generates 'timeline_report.nsys-rep'
-# We send stdout to /dev/null because we don't need the image data for profiling
+# CHANGE 2: Updated Nsight Systems (nsys) command
+# - Removed "cuda" from --trace (since there is no CUDA).
+# - Added "--sample=cpu" (CRITICAL: this records call stacks to see which functions take time).
+# - Changed output filename to "timeline_cpu".
 echo "Profiling Timeline..."
-nsys profile --trace=cuda,osrt --output=timeline_report --force-overwrite true ./pathtracer > /dev/null
-
-# --- REQUIREMENT 3: Kernel Analysis (ncu) ---
-# This generates 'kernel_report.ncu-rep'
-echo "Profiling Kernels..."
-ncu --section MemoryWorkloadAnalysis -o kernel_report --force-overwrite ./pathtracer > ncu.log
+nsys profile \
+    --trace=osrt \
+    --sample=cpu \
+    --output=timeline_cpu \
+    --force-overwrite true \
+    ./pathtracer > /dev/null
