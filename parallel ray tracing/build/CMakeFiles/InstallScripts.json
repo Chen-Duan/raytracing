@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

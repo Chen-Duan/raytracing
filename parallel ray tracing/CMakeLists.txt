@@ -1,16 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
+project(PathTracerCUDA LANGUAGES CXX CUDA)
 
-project(PathTracer)
+set(CMAKE_CUDA_STANDARD 14)
+set(CMAKE_CUDA_ARCHITECTURES 60 70 75 80) # Targets typical University Cluster GPUs (Pascal, Volta, Turing, Ampere)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+include_directories(${CMAKE_SOURCE_DIR})
 
-find_package(Threads REQUIRED)
+# Find all CUDA files
+file(GLOB sources *.cu)
+add_executable(pathtracer main.cu)
 
-add_executable(pathtracer main.cpp)
-
-target_link_libraries(pathtracer PRIVATE Threads::Threads)
-
-target_compile_options(pathtracer PRIVATE
-    $<$<CONFIG:Release>:-O3>
-)
+# Optimization flags are critical for the "Speedup" report
+target_compile_options(pathtracer PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-O3 -use_fast_math>)

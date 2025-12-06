@@ -2,23 +2,22 @@
 #define RAY_H
 
 #include "vec3.h"
-#include "rtweekend.h"
-
 
 class ray {
   public:
-    ray() {}
+    __host__ __device__ ray() {}
+    
+    __host__ __device__ ray(const point3& origin, const vec3& direction)
+      : orig(origin), dir(direction) {}
 
-    ray(const point3& origin, const vec3& direction) : orig(origin), dir(direction) {}
+    __host__ __device__ point3 origin() const { return orig; }
+    __host__ __device__ vec3 direction() const { return dir; }
 
-    const point3& origin() const  { return orig; }
-    const vec3& direction() const { return dir; }
-
-    point3 at(double t) const {
+    __host__ __device__ point3 at(double t) const {
         return orig + t*dir;
     }
 
-  private:
+  public:
     point3 orig;
     vec3 dir;
 };
