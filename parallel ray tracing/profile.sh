@@ -2,7 +2,7 @@
 #SBATCH --job-name=cuda_trace
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
-#SBATCH --time=00:10:00
+#SBATCH --time=01:00:00
 #SBATCH --output=result.out
 #SBATCH --error=result.err
 
@@ -16,7 +16,7 @@ module load nvhpc/24.11-nompi
 
 # --- 2. Build the Project ---
 # We build inside the job to ensure the binary matches the compute node's GPU
-cd build
+mkdir -p build && cd build
 cmake ..
 make
 
@@ -26,6 +26,13 @@ echo "Starting execution..."
 # Option A: Just run it (Uncomment if you just want the image)
 ./pathtracer > image.ppm
 
-# Option B: Run with Profiler (As you requested)
-# Note: We use --force-overwrite to avoid errors if reports exist
+# --- REQUIREMENT 2: Performance Timeline (nsys) ---
+# This generates 'timeline_report.nsys-rep'
+# We send stdout to /dev/null because we don't need the image data for profiling
+echo "Profiling Timeline..."
+nsys profile --trace=cuda,osrt --output=timeline_report --force-overwrite true ./pathtracer > /dev/null
 
+# --- REQUIREMENT 3: Kernel Analysis (ncu) ---
+# This generates 'kernel_report.ncu-rep'
+echo "Profiling Kernels..."
+ncu --section MemoryWorkloadAnalysis -o kernel_report --force-overwrite ./pathtracer > ncu.log

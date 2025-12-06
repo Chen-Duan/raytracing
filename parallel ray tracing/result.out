@@ -1,7 +1,7 @@
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build
-[ 50%] Building CUDA object CMakeFiles/pathtracer.dir/main.cu.o
-[100%] Linking CUDA executable pathtracer
 [100%] Built target pathtracer
 Starting execution...
+Profiling Timeline...
+Profiling Kernels...
