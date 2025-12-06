@@ -202201,8 +202201,3 @@ P3
 221 236 255
 221 236 255
 221 236 255
-Collecting data...
-Generating '/scratch/5421137/nsys-report-9d35.qdstrm'
-[1/1] [0%                          ] timeline_report.nsys-rep[1/1] [0%                          ] timeline_report.nsys-rep[1/1] [===22%                      ] timeline_report.nsys-rep[1/1] [=========44%                ] timeline_report.nsys-rep[1/1] [=========45%                ] timeline_report.nsys-rep[1/1] [====27%                     ] timeline_report.nsys-rep[1/1] [==========47%               ] timeline_report.nsys-rep[1/1] [=========46%                ] timeline_report.nsys-rep[1/1] [==========47%               ] timeline_report.nsys-rep[1/1] [==========48%               ] timeline_report.nsys-rep[1/1] [===============66%          ] timeline_report.nsys-rep[1/1] [===================82%      ] timeline_report.nsys-rep[1/1] [========================100%] timeline_report.nsys-rep[1/1] [========================100%] timeline_report.nsys-rep
-Generated:
-    /project/luo/ychen270/ece6360/raytracing/parallel ray tracing/build/timeline_report.nsys-rep
