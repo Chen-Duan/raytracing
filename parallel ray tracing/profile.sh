@@ -4,14 +4,29 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=00:10:00
 #SBATCH --output=result.out
+#SBATCH --error=result.err
 
-module load cuda
-mkdir -p build && cd build
+# --- 1. Load Modules (CRITICAL) ---
+# The compute node needs these to run cmake and nvcc
+module purge
+module load cmake/3.31.6
+module load gcc/11.3.0
+module load CUDA/12.4.0
+module load nvhpc/24.11-nompi
+
+# --- 2. Build the Project ---
+# We build inside the job to ensure the binary matches the compute node's GPU
+cd build
 cmake ..
 make
 
-# 1. Profile Timeline (CPU + GPU interactions)
-nsys profile --trace=cuda,osrt --output=timeline_report ./pathtracer > image.ppm
+# --- 3. Run & Profile ---
+echo "Starting execution..."
 
-# 2. Profile Kernels (Memory throughput, Shared Memory usage)
-ncu --set full --output=kernel_report ./pathtracer > image.ppm
+# Option A: Just run it (Uncomment if you just want the image)
+# ./pathtracer > image.ppm
+
+# Option B: Run with Profiler (As you requested)
+# Note: We use --force-overwrite to avoid errors if reports exist
+nsys profile --trace=cuda,osrt --output=timeline_report --force-overwrite true ./pathtracer > image.ppm
+
